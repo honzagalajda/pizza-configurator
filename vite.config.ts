@@ -17,6 +17,9 @@ const config = defineConfig({
     viteReact(),
     svgr(),
   ],
+  preview: {
+    allowedHosts: ['pizza-configurator.onrender.com'],
+  },
 })
 
 export default config
