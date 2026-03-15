@@ -104,7 +104,10 @@ export function PizzaSidebar() {
                       key={c.id}
                       selected={field.value === c.id}
                       onClick={() => {
-                        disableForm()
+                        // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+                        if (!sauce) {
+                          disableForm()
+                        }
                         field.onChange(c.id)
                       }}
                       className="flex items-center justify-between px-3 py-2.5"

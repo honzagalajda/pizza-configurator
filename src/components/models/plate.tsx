@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Group } from 'three'
 import { useConfig } from '../provider/config-provider'
 import * as THREE from 'three'
-import { TIME_SCALE } from 'constants/animations'
+import { TIME_SCALE } from '@/constants/animations'
 import { useWatch } from 'react-hook-form'
 
 const PATH = '/3d/plate/tanier.gltf'
